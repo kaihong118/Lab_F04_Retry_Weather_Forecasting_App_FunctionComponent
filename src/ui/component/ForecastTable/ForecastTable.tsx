@@ -10,8 +10,8 @@ type Props = {
 export default function ForecastTable (props: Props) {
     const setTableRow = () => {
         if(props.data) {
-            return props.data.list.map((value:List, index:number) => (
-                <ForecastTableRow data={value} key={index}/>
+            return props.data.list.map((value:List) => (
+                <ForecastTableRow data={value} key={value.dt}/>
             ))
         }
         else {
@@ -20,7 +20,6 @@ export default function ForecastTable (props: Props) {
             ))
         }
     }
-
 
     return (
         <>

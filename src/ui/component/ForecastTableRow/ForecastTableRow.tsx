@@ -15,6 +15,7 @@ export default function ForecastTableRow (props: Props) {
                 <td>{props.data.main.humidity}%</td>
                 <td><img
                     src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+                    alt={"Refresh"}
                     style={{backgroundColor: "transparent"}}
                 /></td>
             </tr>

@@ -9,7 +9,7 @@ export default function WeatherChart (props: Props) {
 
     return (
         <>
-            <ResponsiveContainer width="100%" height={500}>
+            <ResponsiveContainer width="100%" height={400}>
                 <LineChart
                     width={500}
                     height={300}

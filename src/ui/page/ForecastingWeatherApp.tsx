@@ -28,7 +28,8 @@ export default function ForecastingWeatherApp () {
         setData(undefined);
         setUpdatedTime(undefined);
         setChartData([])
-        const responseData = await GetWeatherDataApi.getForecastWeatherData();
+
+        const responseData: ForecastWeatherData | undefined = await GetWeatherDataApi.getForecastWeatherData();
 
         setData(responseData);
         setUpdatedTime(moment().format("DD-M-YYYY HH:mm:ss"));
