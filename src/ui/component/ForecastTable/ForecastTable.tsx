@@ -15,7 +15,7 @@ export default function ForecastTable (props: Props) {
             ))
         }
         else {
-            return Array.from({length:20}).map((value, index:number) => (
+            return Array.from({length:20}).map((_, index:number) => (
                 <ForecastTableRowLoading key={index}/>
             ))
         }
